@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="incall_call_banner_text_color">#ffffff</color>
+    
+    <color name="glowpad_incoming_widget_tint">#a3a3a3</color>
+    <color name="glowpad_incoming_widget_background_tint">#ffffff</color>
+</resources>

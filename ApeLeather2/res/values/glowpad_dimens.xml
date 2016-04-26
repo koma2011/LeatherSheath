@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="incoming_call_widget_circle_size_sub">47dp</dimen>
+    <dimen name="incoming_call_widget_asset_margin_sub">1dp</dimen>
+</resources>

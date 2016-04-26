@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <array name="incoming_call_widget_2way_targets_sub">
+        <item>@drawable/ic_lockscreen_answer_sub</item>
+        <item>@null</item>
+        <item>@drawable/ic_lockscreen_decline_sub</item>
+        <item>@null</item>
+    </array>
+    
+    <array name="incoming_call_widget_2way_target_descriptions">
+        <item>@string/description_target_answer</item>
+        <item>@null</item>
+        <item>@string/description_target_decline</item>
+        <item>@null</item>
+    </array>
+    
+    <array name="incoming_call_widget_2way_direction_descriptions">
+        <item>@string/description_direction_right</item>
+        <item>@null</item>
+        <item>@string/description_direction_left</item>
+        <item>@null</item>
+    </array>
+    
+    <array name="incoming_call_chevron_2way_targets">
+        <item>@drawable/ic_lockscreen_chevron_right_sub</item>
+        <item>@null</item>
+        <item>@drawable/ic_lockscreen_chevron_left_sub</item>
+        <item>@null</item>
+    </array>
+    
+    <array name="callscreen_widget_1way_targets_sub">
+        <item>@drawable/ic_transparent</item>
+        <item>@null</item>
+        <item>@drawable/ic_lockscreen_decline_sub</item>
+        <item>@null</item>
+    </array>
+    
+    <array name="callscreen_widget_1way_target_descriptions">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@string/description_target_decline</item>
+        <item>@null</item>
+    </array>
+    
+    <array name="callscreen_widget_1way_direction_descriptions">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@string/description_direction_left</item>
+        <item>@null</item>
+    </array>
+    
+    <array name="incoming_call_chevron_1way_targets">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@drawable/ic_lockscreen_chevron_left_sub</item>
+        <item>@null</item>
+    </array>
+</resources>

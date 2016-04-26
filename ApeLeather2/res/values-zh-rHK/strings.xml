@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="page_notice_unread_hint">有新消息,請翻蓋查看內容。</string>
+    
+    <string name="page_music_play">沒有歌曲在播放</string>
+    <string name="page_music_name">未知音樂</string>
+    <string name="page_music_artist">未知藝術家</string>
+    
+    <string name="weather_na">N/A</string>
+    <string name="weather_blustery">大風</string>
+    <string name="weather_cloudy">多雲</string>
+    <string name="weather_cloudy_night">多雲</string>
+    <string name="weather_dust">沙塵</string>
+    <string name="weather_foggy">霧</string>
+    <string name="weather_hail">冰雹</string>
+    <string name="weather_haze">霾</string>
+    <string name="weather_heavy_rain">大雨</string>
+    <string name="weather_heavy_snow">大雪</string>
+    <string name="weather_hurricane">颶風</string>
+    <string name="weather_light_rain">小雨</string>
+    <string name="weather_light_snow">小雪</string>
+    <string name="weather_rain">雨</string>
+    <string name="weather_rain_and_hail">雨夾冰雹</string>
+    <string name="weather_rain_and_snow">雨夾雪</string>
+    <string name="weather_rainstorms">雷暴雨</string>
+    <string name="weather_severe_rainstorms">強暴雨</string>
+    <string name="weather_showers">陣雨</string>
+    <string name="weather_snow">雪</string>
+    <string name="weather_snow_and_hail">雪夾冰雹</string>
+    <string name="weather_snow_showers">陣雪</string>
+    <string name="weather_sunny">晴天</string>
+    <string name="weather_sunny_night">晴夜</string>
+    <string name="weather_thunderstorms">雷陣雨</string>
+    <string name="weather_tornado">龍捲風</string>
+    <string name="weather_tropical_storm">熱帶風暴</string>
+</resources>

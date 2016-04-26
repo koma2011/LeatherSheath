@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ape.leather2"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="51005"
+    android:versionName="5.1.0.05" >
+    
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="23" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    
+    <uses-permission android:name="com.tinno.leather.permission.HALL_CHANGE" />
+    <permission android:protectionLevel="dangerous"
+                android:name="com.tinno.leather.permission.HALL_CHANGE"
+                android:permissionGroup="android.permission-group.SYSTEM_TOOLS"/>
+                
+    <application
+        android:name="com.ape.leather2.LeatherApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ape.leather2.ui.activity.LeatherActivity"
+            android:label="@string/app_name"
+            android:excludeFromRecents="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="com.ape.leather2.module.telephone.InCallServiceImpl"
+                 android:permission="android.permission.BIND_INCALL_SERVICE" >
+            <intent-filter>
+                <action android:name="android.telecom.InCallService"/>
+            </intent-filter>
+        </service>
+        
+        <service android:name=".service.LeatherAccessibilityService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/leather_accessibility_config"/>
+        </service>
+        
+        <receiver android:name=".receiver.LeatherReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.HALL_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        
+        <provider
+            android:name="com.ape.leather2.module.geo.LocationProvider"
+            android:authorities="geocoded_location"
+            android:exported="true" />
+    </application>
+</manifest>
